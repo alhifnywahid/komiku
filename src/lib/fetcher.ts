@@ -1,7 +1,6 @@
 export default async function fetcher<T>(endpoint: string = ""): Promise<T> {
   try {
     const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
-    console.log(baseURL + endpoint);
     const response = await fetch(baseURL + endpoint, {
       cache: "no-store",
     });
