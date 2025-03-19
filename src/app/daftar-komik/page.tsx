@@ -13,7 +13,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import fetcher from "@/lib/fetcher";
-import { Comic, RootResponse } from "@/types/response-type";
+import { Comic } from "@/types/comics";
+import {  RootResponse } from "@/types/response-type";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
