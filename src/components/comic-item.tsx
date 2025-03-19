@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Comic } from "@/types/response-type";
+import { Comic } from "@/types/comics";
 import Image from "next/image";
 import Link from "next/link";
 import RatingDisplay from "./rating";
