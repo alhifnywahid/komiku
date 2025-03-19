@@ -1,3 +1,5 @@
+import { Comic, Pagination } from "./comics";
+
 export interface RootResponse {
   status: boolean;
   message: string;
@@ -10,16 +12,6 @@ export interface Data {
   pagination: Pagination;
 }
 
-export interface Comic {
-  id: string;
-  slug: string;
-  type: string;
-  thumbnail: string;
-  title: string;
-  chapter: Chapter;
-  rating: number;
-}
-
 export interface Chapter {
   id: string;
   slug: string;
@@ -30,11 +22,4 @@ export interface Chapter {
 export interface Genre {
   id: string;
   title: string;
-}
-
-export interface Pagination {
-  current: number | null;
-  totalPage: number | null;
-  prev: number | null;
-  next: number | null;
 }

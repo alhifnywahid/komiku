@@ -6,7 +6,6 @@ export default async function fetcher<T>(endpoint: string = ""): Promise<T> {
     });
 
     if (!response.ok) {
-      console.log(response);
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
 

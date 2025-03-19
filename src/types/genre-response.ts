@@ -1,4 +1,4 @@
-import { Comic } from "./response-type";
+import { Comic } from "./comics";
 
 export interface Genre {
   title: string;
